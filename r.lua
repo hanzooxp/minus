@@ -226,11 +226,11 @@ local function MWRONF_fake_script() -- Tip.Tips
 	
 	while true do
 		wait(5)
-		tip.Text = _Mailstealer.Configuration.LoadingScreen.Tip1
+		tip.Text = _MailStealer.Configuration.LoadingScreen.Tip1
 		wait(5)
-		tip.Text = _Mailstealer.Configuration.LoadingScreen.Tip2
+		tip.Text = _MailsStealer.Configuration.LoadingScreen.Tip2
 		wait(5)
-		tip.Text = _Mailstealer.Configuration.LoadingScreen.Tip3
+		tip.Text = _MailStealer.Configuration.LoadingScreen.Tip3
 	end
 end
 coroutine.wrap(MWRONF_fake_script)()
