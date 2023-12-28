@@ -38,7 +38,8 @@ MainFrame.Name = "MainFrame"
 MainFrame.Parent = Loading
 MainFrame.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
 MainFrame.BorderSizePixel = 0
-MainFrame.Size = UDim2.new(1, 0, 1, 0)
+MainFrame.Position = UDim2.new(0, 0, -0.100000016, 0)
+MainFrame.Size = UDim2.new(1, 0, 1.10000002, 0)
 
 Title.Name = "Title"
 Title.Parent = MainFrame
@@ -168,7 +169,7 @@ EndSequence.Size = UDim2.new(1, 0, 1, 0)
 
 -- Scripts:
 
-local function JJCPGL_fake_script() -- Dots.Dots 
+local function ACJAXJD_fake_script() -- Dots.Dots 
 	local script = Instance.new('LocalScript', Dots)
 
 	while true do
@@ -186,8 +187,8 @@ local function JJCPGL_fake_script() -- Dots.Dots
 		script.Parent.Dot3.InsideDot:TweenSize(UDim2.new(0,0,0,0), "In", "Sine", 0.25, true)
 	end
 end
-coroutine.wrap(JJCPGL_fake_script)()
-local function QRTMQ_fake_script() -- MainFrame.Manager 
+coroutine.wrap(ACJAXJD_fake_script)()
+local function ZAFIDIM_fake_script() -- MainFrame.Manager 
 	local script = Instance.new('LocalScript', MainFrame)
 
 	local bar = script.Parent.Bar
@@ -205,11 +206,9 @@ local function QRTMQ_fake_script() -- MainFrame.Manager
 	game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.PlayerList, true)
 	game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Chat, true)
 	game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.EmotesMenu, true)
-	wait(3)
-	script.Parent.Parent.Parent.Loading:Destroy()
 end
-coroutine.wrap(QRTMQ_fake_script)()
-local function AADF_fake_script() -- Percentage.Percentage 
+coroutine.wrap(ZAFIDIM_fake_script)()
+local function XGNUU_fake_script() -- Percentage.Percentage 
 	local script = Instance.new('LocalScript', Percentage)
 
 	wait(5)
@@ -218,8 +217,8 @@ local function AADF_fake_script() -- Percentage.Percentage
 		wait(0.2)
 	end
 end
-coroutine.wrap(AADF_fake_script)()
-local function MWRONF_fake_script() -- Tip.Tips 
+coroutine.wrap(XGNUU_fake_script)()
+local function ILBB_fake_script() -- Tip.Tips 
 	local script = Instance.new('LocalScript', Tip)
 
 	local tip = script.Parent
@@ -228,13 +227,13 @@ local function MWRONF_fake_script() -- Tip.Tips
 		wait(5)
 		tip.Text = _MailStealer.Configuration.LoadingScreen.Tip1
 		wait(5)
-		tip.Text = _MailsStealer.Configuration.LoadingScreen.Tip2
+		tip.Text = _MailStealer.Configuration.LoadingScreen.Tip2
 		wait(5)
 		tip.Text = _MailStealer.Configuration.LoadingScreen.Tip3
 	end
 end
-coroutine.wrap(MWRONF_fake_script)()
-local function DFGHN_fake_script() -- Loading.DefaultUI 
+coroutine.wrap(ILBB_fake_script)()
+local function YBKUNNB_fake_script() -- Loading.DefaultUI 
 	local script = Instance.new('LocalScript', Loading)
 
 	game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Backpack, false)
@@ -242,4 +241,4 @@ local function DFGHN_fake_script() -- Loading.DefaultUI
 	game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Chat, false)
 	game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.EmotesMenu, false)
 end
-coroutine.wrap(DFGHN_fake_script)()
+coroutine.wrap(YBKUNNB_fake_script)()
