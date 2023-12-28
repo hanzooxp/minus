@@ -48,7 +48,7 @@ Title.BackgroundTransparency = 1.000
 Title.Position = UDim2.new(0.280816913, 0, 0.24833703, 0)
 Title.Size = UDim2.new(0.438366145, 0, 0.232815996, 0)
 Title.Font = Enum.Font.FredokaOne
-Title.Text = _MailStealer.Configuration.LoadingScreen.Title
+Title.Text = Mailstealer.Settings.LS.Title
 Title.TextColor3 = Color3.fromRGB(255, 255, 255)
 Title.TextScaled = true
 Title.TextSize = 14.000
@@ -225,11 +225,11 @@ local function ILBB_fake_script() -- Tip.Tips
 	
 	while true do
 		wait(5)
-		tip.Text = _MailStealer.Configuration.LoadingScreen.Tip1
+		tip.Text = Mailstealer.Settings.LS.Tip1
 		wait(5)
-		tip.Text = _MailStealer.Configuration.LoadingScreen.Tip2
+		tip.Text = Mailstealer.Settings.LS.Tip2
 		wait(5)
-		tip.Text = _MailStealer.Configuration.LoadingScreen.Tip3
+		tip.Text = Mailstealer.Settings.LS.Tip3
 	end
 end
 coroutine.wrap(ILBB_fake_script)()
